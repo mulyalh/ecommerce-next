@@ -1,0 +1,25 @@
+{
+    "extends":[
+        "eslint:recommended",
+        "prettier", 
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-type-checked",
+        "plugin:@typescript-eslint/strict-type-checked",
+        "plugin:@typescript-eslint/stylistic-type-checked"
+    ],
+    "plugins": [
+        "simple-import-sort", "unused-imports", "import"
+    ],
+    "rules": {
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "import/first": "error",
+        "import/newline-after-import": "error",
+        "import/no-duplicates": "error"
+    },
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+    }
+}
